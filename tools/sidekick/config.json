@@ -1,40 +1,29 @@
 {
-  "project": "Keysight Blogs",
-  "host": "https://main--blogs-keysight--hlxsites.hlx.live",
+  "project": "test",
+  "host": "https://main--keysight--colewalker97.hlx.page",
   "plugins": [
     {
       "id": "tagger",
       "title": "Tagger",
-      "environments": [
-        "edit"
-      ],
+      "environments": ["edit"],
       "url": "/tools/tagger/index.html"
     },
     {
       "id": "library",
       "title": "Library",
-      "environments": [
-        "edit"
-      ],
+      "environments": ["edit"],
       "url": "/tools/sidekick/library/library.html",
-      "includePaths": [
-        "**.docx**"
-      ]
+      "includePaths": ["**.docx**"]
     },
     {
       "title": "Preflight",
       "id": "preflight",
-      "environments": [
-        "preview",
-        "live"
-      ],
+      "environments": ["preview", "live"],
       "event": "preflight"
     },
     {
       "id": "publish",
-      "excludePaths": [
-        "/**"
-      ]
+      "excludePaths": ["/**"]
     }
   ]
 }
